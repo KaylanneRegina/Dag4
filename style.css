@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", serif;
+    color: white;
+}
+
+body{
+    background-color: #020D18;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura ajustável */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    filter: blur(10px);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%; /* Define a altura do efeito de opacidade */
+    background: linear-gradient(to bottom, rgba(2, 13, 24, 0) 0%, rgba(2, 13, 24) 100%);
+    pointer-events: none; /* Não interfere na interação com o vídeo */
+}
+
+.div-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 65px 15px 50px;
+}
+
+
+.logotipo{
+    width: 120px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link.btn-contato{
+    border: 2px solid #7869FF;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.frase{
+    color: white;
+    font-weight: 400;
+    width: 370px;
+    font-size: 45px;
+    margin: 0;
+}
+
+.servicos{
+    padding: 15px 65px 15px 65px;
+}
+
+.div-frase{
+    padding: 0px 65px 0px 65px;
+    margin-top: 100px;
+}
+
+.frase-repeticao{
+    font-size: 60px;
+    margin: 0;
+}
+
+.div-repeticao{
+    margin-bottom: 60px;
+}
+
+.frase-repeticao {
+    display: inline-block;
+    background: linear-gradient(90deg, #7869FF, #C74343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.typed-cursor {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-contato-home{
+    background-color: #7869FF;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Seção principal */
+.o-que-fazemos {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-servicos{
+    display: flex;
+    padding: 0px 65px 0px 65px;
+}
+
+/* Texto do título e parágrafo */
+.texto {
+    flex: 1;
+    max-width: 45%;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.texto .destaque {
+    color: #7869FF;
+    font-weight: bold;
+}
+
+
+.texto p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-right: 170px;
+}
+
+.icone-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.linha {
+    width: 170px;
+    height: 5px;
+    background: linear-gradient(90deg, #7869FF, #C74343);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Cards */
+.cards {
+    flex: 1;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #121A2A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card .icone {
+    font-size: 2.5rem;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 0;
+}
+
+/* SOBRE NÓS */
+
+.container-sobre-nos{
+    padding: 40px 65px 40px 65px;
+    background: linear-gradient(90deg, #7869ff51, #c743434a);
+}
+
+.titulo-img{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.titulo-img h1{
+    margin: 0;
+    font-weight: 500;
+}
+
+.titulo-img img{
+    width: 120px;
+}
+
+.descricao{
+    margin: 80px 0px 0px;
+}

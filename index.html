@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dag4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="img/background-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="overlay"></div>
+        <div class="div-header">
+            <div class="div-logotipo">
+                <img class="logotipo" src="img/daga.png" alt="dag4 logotipo">
+            </div>
+            <nav>
+                <a class="nav-link" href="">Início</a>
+                <a class="nav-link" href="">Serviços</a>
+                <a class="nav-link" href="">Quem Somos</a>
+                <a class="nav-link separacao" href="">|</a>
+                <a class="nav-link" href="">Idioma</a>
+                <a class="nav-link btn-contato" href="">Fale conosco</a>
+            </nav>
+        </div>
+
+        <div class="div-frase">
+            <h1 class="frase">Desenvolvendo o <strong>futuro</strong> com</h1>
+            <div class="div-repeticao">
+                <h1 class="frase-repeticao">Criatividade</h1>
+            </div>
+            <a href="" class="btn-contato-home">Fale conosco</a>
+        </div>
+    </header>
+
+    <section class="o-que-fazemos">
+        <div class="container-servicos">
+            <div class="texto">
+                <h1>O que <span class="destaque">fazemos</span></h1>
+                <p>Somos o seu parceiro para a transformação digital. Independente do seu negócio, entregamos projetos personalizados para as suas necessidades, sempre com foco na performance e na experiência do usuário final.</p>
+                <div class="linha"></div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="icone-titulo">
+                        <div class="icone">🌐</div>
+                        <h3>Sites Institucionais</h3>
+                    </div>
+                    <p>Criação de sites para empresas visando apresentação, serviços e produtos com a mais alta qualidade!</p>
+                </div>
+                <div class="card">
+                    <div class="icone-titulo">
+                        <div class="icone">💻</div>
+                        <h3>Desenvolvimento Web</h3>
+                    </div>
+                    <p>Para projetos maiores que envolvem a criação de intranets, sistemas web, sistemas customizados, integrações, etc.</p>
+                </div>
+                <div class="card">
+                    <div class="icone-titulo">
+                        <div class="icone">⭐</div>
+                        <h3>Sites de Grande Porte</h3>
+                    </div>
+                    <p>Desenvolvimento de websites com grande quantidade de informações como páginas, integrações, etc.</p>
+                </div>
+                <div class="card">
+                    <div class="icone-titulo">
+                        <div class="icone">⚙️</div>
+                        <h3>Desenvolvimento Personalizado</h3>
+                    </div>
+                    <p>Desenvolvimento de soluções web específicas para cada necessidade. Entre em contato conosco!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-nos">
+        <div class="container-sobre-nos">
+            <div class="titulo-img">
+                <h1>Nós somos a <strong>Dag4.</strong></h1>
+                <!-- <img src="img/daga.png" alt=""> -->
+            </div>
+            <p class="descricao">Nosso objetivo é transformar ideias em soluções digitais práticas, intuitivas e acessíveis, que atendam às suas necessidades e impulsionem seus resultados. Combinamos tecnologia de ponta com design pensado para simplificar processos, facilitar o uso e resolver desafios do dia a dia da sua empresa. Cada solução desenvolvida é moderna, funcional e focada na experiência do usuário, garantindo eficiência e fácil implementação no seu ambiente de trabalho.</p>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="container-contato">
+            <div class="linha-logotipo">
+                <img src="img/daga.png" alt="">
+            </div>
+            <div class="linha-roxa"></div>
+            <div class="div-textos">
+                <h1>Como podemos ajudar você hoje?</h1>
+                <p>Fale conosco e conte qual a sua necessidade. Somos especialistas em desenvolvimento web. Com certeza vamos lhe ajudar a chegar onde quer!</p>
+            </div>
+            <a class="btn-whats" href="">Entre em contato</a>
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var options = {
+                strings: ["Criatividade", "Inovação", "Design", "Confiança", "Qualidade", "Dag4"],
+                typeSpeed: 100,  
+                backSpeed: 50,   
+                backDelay: 1500, 
+                startDelay: 500, 
+                loop: true       
+            };
+        
+            new Typed(".frase-repeticao", options);
+        });
+    </script>
+
+</body>
+
+</html>
