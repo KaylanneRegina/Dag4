@@ -81,23 +81,20 @@ nav{
 }
 
 .dropdown-btn {
-    background-color: #007bff;
+    background-color: transparent;
     color: white;
-    padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.dropdown-btn:hover {
-    background-color: #0056b3;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 /* Estilização do menu */
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #a097f3;
     min-width: 120px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -109,6 +106,11 @@ nav{
     padding: 10px 15px;
     display: block;
     text-decoration: none;
+    display: flex;
+}
+
+.dropdown-menu a img{
+    margin-right: 5px;
 }
 
 .dropdown-menu a:hover {
