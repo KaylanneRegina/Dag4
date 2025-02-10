@@ -15,7 +15,7 @@ body{
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Altura ajustável */
+    height: 75vh;
     overflow: hidden;
 }
 
@@ -44,12 +44,12 @@ body{
 .div-header{
     display: flex;
     justify-content: space-between;
-    padding: 15px 65px 15px 50px;
+    padding: 15px 65px 15px 65px;
 }
 
 
 .logotipo{
-    width: 120px;
+    width: 110px;
 }
 
 nav{
@@ -68,6 +68,51 @@ nav{
     border: 2px solid #7869FF;
     padding: 5px;
     border-radius: 10px;
+}
+
+.nav-link.btn-contato:hover{
+    background-color: #7869FF;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização do menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
 }
 
 .frase{
@@ -121,7 +166,7 @@ nav{
 
 /* Seção principal */
 .o-que-fazemos {
-    padding: 40px 20px;
+    padding: 60px  0px;
 }
 
 .container {
@@ -136,6 +181,7 @@ nav{
 .container-servicos{
     display: flex;
     padding: 0px 65px 0px 65px;
+    justify-content: space-between;
 }
 
 /* Texto do título e parágrafo */
@@ -175,6 +221,14 @@ nav{
     border-radius: 5px;
 }
 
+.linha-roxa {
+    width: 150px;
+    height: 5px;
+    background-color: #7869FF;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 /* Cards */
 .cards {
     flex: 1;
@@ -205,6 +259,7 @@ nav{
 .card h3 {
     font-size: 15px;
     margin: 0;
+    text-align: left;
 }
 
 .card p {
@@ -214,10 +269,15 @@ nav{
     margin: 0;
 }
 
+.icone img{
+    margin-right: 15px;
+}
+
+
 /* SOBRE NÓS */
 
 .container-sobre-nos{
-    padding: 40px 65px 40px 65px;
+    padding: 65px;
     background: linear-gradient(90deg, #7869ff51, #c743434a);
 }
 
@@ -238,4 +298,110 @@ nav{
 
 .descricao{
     margin: 80px 0px 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 150px;
+    background-color: #11181F;
+}
+
+.linha-logotipo {
+    background-image: url(img/dag4-repeticao.png);
+    background-repeat: repeat-x;
+    background-size: 180px  auto;
+    background-position: 10px center;
+    height: 100px;
+    width: 100%;
+    opacity: 0.2;
+    margin-bottom: 10px;
+}
+
+.div-textos h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.div-textos p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.btn-whats{
+    padding: 10px 70px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.btn-whats:hover{
+    border: 2px solid #7869FF;
+    background-color: #7869FF;
+}
+
+/* FOOTER */
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px;
+}
+
+.logo-descricao{
+    width: 500px;
+}
+
+.logo-descricao img{
+    width: 150px;
+}
+
+.logo-descricao p{
+    font-size: 22px;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer h2{
+    text-transform: uppercase;
+}
+
+.nav-footer a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+.icone-nome{
+    display: flex;
+    align-items: center;
+}
+
+.icone-nome svg{
+    margin-right: 5px;
+}
+
+.icone-nome p{
+    margin: 0;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    margin: 0.83em 0px;
+}
+
+.redes-sociais .icon{
+    color: white;
 }

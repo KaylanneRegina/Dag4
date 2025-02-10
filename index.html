@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dag4</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body>
     <header class="video-container">
@@ -18,12 +19,20 @@
                 <img class="logotipo" src="img/daga.png" alt="dag4 logotipo">
             </div>
             <nav>
-                <a class="nav-link" href="">Início</a>
-                <a class="nav-link" href="">Serviços</a>
-                <a class="nav-link" href="">Quem Somos</a>
+                <a class="nav-link" href="/">Início</a>
+                <a class="nav-link" href="#servicos">Serviços</a>
+                <a class="nav-link" href="#sobre-nos">Quem Somos</a>
                 <a class="nav-link separacao" href="">|</a>
-                <a class="nav-link" href="">Idioma</a>
-                <a class="nav-link btn-contato" href="">Fale conosco</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Idioma</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Português</a>
+                        <a href="#">Espanhol</a>
+                        <a href="#">Inglês</a>
+                    </div>
+                </div>
+
+                <a class="nav-link btn-contato" href="/">Fale conosco</a>
             </nav>
         </div>
 
@@ -36,7 +45,7 @@
         </div>
     </header>
 
-    <section class="o-que-fazemos">
+    <section class="o-que-fazemos" id="servicos">
         <div class="container-servicos">
             <div class="texto">
                 <h1>O que <span class="destaque">fazemos</span></h1>
@@ -46,37 +55,45 @@
             <div class="cards">
                 <div class="card">
                     <div class="icone-titulo">
-                        <div class="icone">🌐</div>
-                        <h3>Sites Institucionais</h3>
+                        <div class="icone"><img src="img/icone1.png" alt=""></div>
+                        <div class="descricao-servico">
+                            <h3>Sites Institucionais</h3>
+                            <p>Criação de sites para empresas visando apresentação, serviços e produtos com a mais alta qualidade!</p>
+                        </div>
                     </div>
-                    <p>Criação de sites para empresas visando apresentação, serviços e produtos com a mais alta qualidade!</p>
                 </div>
                 <div class="card">
                     <div class="icone-titulo">
-                        <div class="icone">💻</div>
-                        <h3>Desenvolvimento Web</h3>
+                        <div class="icone"><img src="img/icone2.png" alt=""></div>
+                        <div class="descricao-servico">
+                            <h3>Desenvolvimento Web</h3>
+                            <p>Para projetos maiores que envolvem a criação de intranets, sistemas web, sistemas customizados, integrações, etc.</p>
+                        </div>
                     </div>
-                    <p>Para projetos maiores que envolvem a criação de intranets, sistemas web, sistemas customizados, integrações, etc.</p>
                 </div>
                 <div class="card">
                     <div class="icone-titulo">
-                        <div class="icone">⭐</div>
-                        <h3>Sites de Grande Porte</h3>
+                        <div class="icone"><img src="img/icone3.png" alt=""></div>
+                        <div class="descricao-servico">
+                            <h3>Sites de Grande Porte</h3>
+                            <p>Desenvolvimento de websites com grande quantidade de informações como páginas, integrações, etc.</p>
+                        </div>
                     </div>
-                    <p>Desenvolvimento de websites com grande quantidade de informações como páginas, integrações, etc.</p>
                 </div>
                 <div class="card">
                     <div class="icone-titulo">
-                        <div class="icone">⚙️</div>
-                        <h3>Desenvolvimento Personalizado</h3>
+                        <div class="icone"><img src="img/icone4.png" alt=""></div>
+                        <div class="descricao-servico">
+                            <h3>Desenvolvimento Personalizado</h3>
+                            <p>Desenvolvimento de soluções web específicas para cada necessidade. Entre em contato conosco!</p>
+                        </div>
                     </div>
-                    <p>Desenvolvimento de soluções web específicas para cada necessidade. Entre em contato conosco!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sobre-nos">
+    <section class="sobre-nos" id="sobre-nos">
         <div class="container-sobre-nos">
             <div class="titulo-img">
                 <h1>Nós somos a <strong>Dag4.</strong></h1>
@@ -86,19 +103,56 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="container-contato">
-            <div class="linha-logotipo">
-                <img src="img/daga.png" alt="">
-            </div>
+            <div class="linha-logotipo"></div>
             <div class="linha-roxa"></div>
             <div class="div-textos">
                 <h1>Como podemos ajudar você hoje?</h1>
-                <p>Fale conosco e conte qual a sua necessidade. Somos especialistas em desenvolvimento web. Com certeza vamos lhe ajudar a chegar onde quer!</p>
+                <p>Fale conosco e conte qual a sua necessidade.<br>Somos especialistas em desenvolvimento web. Com certeza vamos lhe ajudar a chegar onde quer!</p>
             </div>
             <a class="btn-whats" href="">Entre em contato</a>
         </div>
     </section>
+    <footer>
+        <div class="container-footer">
+            <div class="logo-descricao">
+                <img src="img/daga.png" alt="">
+                <p>A dag4 é uma empresa de Tecnologia com foco no Desenvolvimento Web de Soluções Digitais. Trabalhamos com Desenvolvimento e Manutenção de Sites e Desenvolvimento de Sistemas e Aplicações.</p>
+            </div>
+            <div class="nav-footer">
+                <h2>Menu</h2>
+                <a href="/">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre-nos">Quem Somos</a>
+                <a href="#contato">Fale Conosco</a>
+            </div>
+            <div class="nav-footer">
+                <h2>Onde estamos</h2>
+                <a href="" class="icone-nome">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.115 21.811c.606.5 1.238.957 1.885 1.403a27 27 0 0 0 1.885-1.403a28 28 0 0 0 2.853-2.699C18.782 16.877 21 13.637 21 10a9 9 0 1 0-18 0c0 3.637 2.218 6.876 4.262 9.112a28 28 0 0 0 2.853 2.7M12 13.25a3.25 3.25 0 1 1 0-6.5a3.25 3.25 0 0 1 0 6.5"/></svg>
+                    <p>Endereço, 0000, Endereço</p>
+                </a>
+                <a href="" class="icone-nome">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"/></svg>
+                    <p>suporte@daga.com</p>
+                </a>
+                <a href="" class="icone-nome">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0a1 1 0 0 0 2 0"/></svg>
+                    <p>(82) 9 9999-9999</p>
+                </a>
+            </div>
+            <div class="redes-sociais">
+                <a href="" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg>
+                </a>
+                <a href="" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"/></svg>
+
+                </a>
+            </div>
+        </div>
+    </footer>
 
     
 
@@ -115,6 +169,26 @@
             };
         
             new Typed(".frase-repeticao", options);
+        });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownBtn = document.querySelector(".dropdown-btn");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            dropdownBtn.addEventListener("click", function(event) {
+                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+                event.stopPropagation(); // Impede que o clique feche imediatamente
+            });
+
+            // Fecha o menu se clicar fora dele
+            document.addEventListener("click", function(event) {
+                if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
         });
     </script>
 
